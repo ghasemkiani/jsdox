@@ -6,8 +6,12 @@ const {Renderer: BaseRenderer} = require("@ghasemkiani/dox/renderer");
 
 class Renderer extends BaseRenderer {
 	createWDocument() {
-		return new WDocument();
+		let mime = this.mime;
+		return new WDocument({mime});
 	}
 }
+cutil.extend(Renderer.prototype, {
+	mime: "application/xml",
+});
 
 module.exports = {Renderer};

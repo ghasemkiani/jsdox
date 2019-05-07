@@ -1,6 +1,6 @@
 {
   "name": "@ghasemkiani/jsdox",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Using dox with jsdom",
   "main": "index.js",
   "scripts": {

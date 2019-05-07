@@ -1,0 +1,30 @@
+{
+  "name": "@ghasemkiani/jsdox",
+  "version": "1.0.0",
+  "description": "Using dox with jsdom",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ghasemkiani/jsdox.git"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "document",
+    "processor",
+    "dox",
+    "jsdom"
+  ],
+  "author": "Ghasem Kiani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/ghasemkiani/jsdox/issues"
+  },
+  "homepage": "https://gitlab.com/ghasemkiani/jsdox#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  }
+}

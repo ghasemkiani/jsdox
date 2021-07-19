@@ -1,6 +1,6 @@
 //	@ghasemkiani/jsdox/renderer
 
-const {cutil} = require("@ghasemkiani/commonbase/cutil");
+const {cutil} = require("@ghasemkiani/base/cutil");
 const {WDocument} = require("@ghasemkiani/wjsdom/document");
 const {Renderer: BaseRenderer} = require("@ghasemkiani/dox/renderer");
 

@@ -1,7 +1,7 @@
 //	@ghasemkiani/jsdox/renderer
 
-const {cutil} = require("@ghasemkiani/base/cutil");
-const {WDocument} = require("@ghasemkiani/wjsdom/document");
+import {cutil} from "@ghasemkiani/base";
+import {WDocument} from "@ghasemkiani/wjsdom";
 const {Renderer: BaseRenderer} = require("@ghasemkiani/dox/renderer");
 
 class Renderer extends BaseRenderer {
@@ -14,4 +14,4 @@ cutil.extend(Renderer.prototype, {
 	mime: "application/xml",
 });
 
-module.exports = {Renderer};
+export {Renderer};

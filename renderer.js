@@ -1,17 +1,14 @@
-//	@ghasemkiani/jsdox/renderer
-
 import {cutil} from "@ghasemkiani/base";
-import {WDocument} from "@ghasemkiani/wjsdom";
-const {Renderer: BaseRenderer} = require("@ghasemkiani/dox/renderer");
+import {Renderer as BaseRenderer} from "@ghasemkiani/dox";
+import {iwjsdom} from "@ghasemkiani/jsdom";
 
-class Renderer extends BaseRenderer {
-	createWDocument() {
-		let mime = this.mime;
-		return new WDocument({mime});
+class Renderer extends cutil.mixin(BaseRenderer, iwjsdom) {
+	static {
+		cutil.extend(this.prototype, {
+			defaultText: '<html xmlns="http://www.w3.org/1999/xhtml"></html>',
+			defaultMime: "application/xml",
+		});
 	}
 }
-cutil.extend(Renderer.prototype, {
-	mime: "application/xml",
-});
 
 export {Renderer};

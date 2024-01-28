@@ -1,35 +1,35 @@
 {
-  "name": "@ghasemkiani/jsdox",
-  "version": "1.1.0",
-  "description": "Using dox with jsdom",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://gitlab.com/ghasemkiani/jsdox.git"
-  },
-  "keywords": [
-    "javascript",
-    "nodejs",
-    "document",
-    "processor",
-    "dox",
-    "jsdom"
-  ],
-  "author": "Ghasem Kiani",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://gitlab.com/ghasemkiani/jsdox/issues"
-  },
-  "homepage": "https://gitlab.com/ghasemkiani/jsdox#readme",
-  "devDependencies": {
-    "mocha": "^6.1.4"
-  },
-  "dependencies": {
-    "@ghasemkiani/base": "github:ghasemkiani/base",
-    "@ghasemkiani/dox": "gitlab:ghasemkiani/dox",
-    "@ghasemkiani/wjsdom": "gitlab:ghasemkiani/wjsdom"
-  }
+	"name": "@ghasemkiani/jsdox",
+	"version": "1.3.0",
+	"description": "Using dox with jsdom",
+	"type": "module",
+	"main": "index.js",
+	"exports": {
+		".": "./index.js"
+	},
+	"scripts": {
+		"test": "node --test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://gitlab.com/ghasemkiani/jsdox.git"
+	},
+	"keywords": [
+		"document",
+		"processor",
+		"dox",
+		"jsdom"
+	],
+	"author": "Ghasem Kiani",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://gitlab.com/ghasemkiani/jsdox/issues"
+	},
+	"homepage": "https://gitlab.com/ghasemkiani/jsdox#readme",
+	"devDependencies": {},
+	"dependencies": {
+		"@ghasemkiani/base": "github:ghasemkiani/base",
+		"@ghasemkiani/dox": "github:ghasemkiani/dox",
+		"@ghasemkiani/jsdom": "github:ghasemkiani/jsdom"
+	}
 }
